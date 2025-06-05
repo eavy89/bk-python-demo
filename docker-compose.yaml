@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  fastapi-app:
+    build: .
+    container_name: fastapi-app
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - ./demo.db:/app/demo.db # To have persistence
+    env_file:
+      - .env
+    restart: unless-stopped

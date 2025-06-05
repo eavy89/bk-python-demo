@@ -17,6 +17,12 @@ This project includes a secure login system, protected endpoints, and is fully c
 
 ---
 
+### System Requirements
+- Python 3.8+ (and: python3-pip, python3-distutils-extra)
+- Docker
+- Docker Compose
+- 
+
 ## 🚀 Quick Start
 
 ### 1. Clone the repo
@@ -28,5 +34,8 @@ cd backend-python-demo
 
 ### 2. Build and run the container
 ```bash
-    ... 
+    docker-container up -d --build  # with sudo if you do not have permissions'
 ```
+
+### 3. Access to API Docs
+Go to: http://localhost:8000/docs
